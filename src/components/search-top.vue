@@ -75,10 +75,13 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-    .wv-search-top{height:28px; padding:8px 10px; background:white; display:flex;}
-    .wv-search-con{width:100%; height:100%; position:relative; border-radius:3px; overflow:hidden; flex:1;}
-        .wv-search-input{position:absolute; height:100%; width:100%; border:none; background:#ededed; padding:0 1em; color:#999999; box-sizing:border-box;}
-        .search-icon{position:absolute; color:#67bea5; font-size:20px; right:6px; line-height:28px;}
-    .search-btn{color:#1f80e6; line-height:28px; padding-left:1em; font-weight:bold;}
+<style lang="scss">
+    .wv-search-top{height:28px; padding:8px 10px; background:white; display:flex;
+        .wv-search-con{width:100%; height:100%; position:relative; border-radius:3px; overflow:hidden; flex:1;
+            .wv-search-input{position:absolute; height:100%; width:100%; border:none; background:#ededed; padding:0 1em; color:#999999; box-sizing:border-box;}
+            .search-icon{position:absolute; color:#67bea5; font-size:20px; right:6px; line-height:28px;}
+        }
+
+        .search-btn{color:#1f80e6; line-height:28px; padding-left:1em; font-weight:bold;}
+    }
 </style>

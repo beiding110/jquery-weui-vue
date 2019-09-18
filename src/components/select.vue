@@ -1,5 +1,5 @@
 <template>
-    <input class="weui-input w-select" ref="wSelect" type="text" :placeholder="placeholder" v-model="modelName">
+    <input class="wv-select weui-input w-select" ref="wSelect" type="text" :placeholder="placeholder" v-model="modelName">
 </template>
 
 <script>

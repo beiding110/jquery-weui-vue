@@ -1,5 +1,5 @@
 <template>
-    <div :id="name" class="weui-tab__bd-item" :class="!!active ? (active===name ? 'weui-tab__bd-item--active' : '') : (!slotIndex ? 'weui-tab__bd-item--active' : '')">
+    <div :id="name" class="wv-tab-item weui-tab__bd-item" :class="!!active ? (active===name ? 'weui-tab__bd-item--active' : '') : (!slotIndex ? 'weui-tab__bd-item--active' : '')">
         <slot></slot>
     </div>
 </template>

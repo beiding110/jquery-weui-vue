@@ -1,5 +1,5 @@
 <template>
-    <div ref="scroll-con" class="scroll-con" @scroll="storageScroll">
+    <div ref="scroll-con" class="wv-scroll-con" @scroll="storageScroll">
         <div ref="scroll-scroller" class="scroll-scroller">
             <div class="weui-pull-to-refresh__layer" v-if="action">
                 <div class='weui-pull-to-refresh__arrow'></div>
@@ -202,5 +202,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-    .scroll-con{overflow: auto; position: absolute; left:0; top:0; right:0; bottom:0;}
+    .wv-scroll-con{overflow: auto; position: absolute; left:0; top:0; right:0; bottom:0;}
 </style>

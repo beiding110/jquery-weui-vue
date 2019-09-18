@@ -1,5 +1,5 @@
 <template>
-    <tr class="table-row">
+    <tr class="wv-table-row table-row">
         <td :style="labelStyle" class="table-label">
             {{label}}
         </td>
@@ -35,9 +35,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-    .table-row{border: none;}
-    .table-row td{border: 1px solid #F2F6FC; font-size:13px; color:#606266; padding:0.5em;}
-    .table-label{text-align: center; background: #F2F6FC;}
-    .table-data{text-align: left;}
+<style lang="scss">
+    .wv-table-row{
+        &.table-row{border: none;}
+        &.table-row td{border: 1px solid #F2F6FC; font-size:13px; color:#606266; padding:0.5em;}
+        .table-label{text-align: center; background: #F2F6FC;}
+        .table-data{text-align: left;}
+    }
 </style>

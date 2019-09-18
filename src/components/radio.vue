@@ -1,5 +1,5 @@
 <template>
-    <div class="weui-cells weui-cells_radio">
+    <div class="wv-radio weui-cells weui-cells_radio">
         <template v-for="item in data">
             <label class="weui-cell weui-check__label" :for="item.value">
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="btn-picker_con">
+    <div class="wv-btn-picker btn-picker_con">
         <input class="btn-picker" ref="picker" v-model="label" :placeholder="placeholder"/>
     </div>
 </template>
@@ -119,10 +119,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-    .btn-picker_con{height:44px; position: relative; z-index:10; background:white;}
-    .btn-picker_con:before, .btn-picker_con:after{content:' '; display:block; position:absolute; }
-    /* .btn-picker_con:before{width:100%; height:1px; background: #e5e5e5; bottom:0; } */
-    .btn-picker_con:after{content:' '; border-bottom:1px solid #9B9B9B; border-right:1px solid #9B9B9B; width:0.5em; height:0.5em; right:10%; top:50%; transform: translate(-50%, -50%) rotate(45deg);}
-    .btn-picker{border:none; display: block; width:80%; height:100%; color:#9B9B9B; margin:0 auto; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+<style lang="scss">
+    .wv-btn-picker{
+        &.btn-picker_con{height:44px; position: relative; z-index:10; background:white;}
+        &.btn-picker_con:before, .btn-picker_con:after{content:' '; display:block; position:absolute; }
+        /* .btn-picker_con:before{width:100%; height:1px; background: #e5e5e5; bottom:0; } */
+        &.btn-picker_con:after{content:' '; border-bottom:1px solid #9B9B9B; border-right:1px solid #9B9B9B; width:0.5em; height:0.5em; right:10%; top:50%; transform: translate(-50%, -50%) rotate(45deg);}
+        .btn-picker{border:none; display: block; width:80%; height:100%; color:#9B9B9B; margin:0 auto; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+    }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="weui-search-bar w-search">
+    <div class="weui-search-bar wv-search">
         <form class="weui-search-bar__form">
             <div class="weui-search-bar__box">
                 <i class="weui-icon-search"></i>
@@ -65,12 +65,15 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-    .weui-icon-search{color:#68BFA6;}
+<style lang="scss">
+    .wv-search{
+        &.weui-search-bar{z-index:10; background-color: #fff;
+            &::after{content:none;}
+        }
 
-    .weui-search-bar__form{border-radius:5px; overflow:hidden;}
-    .weui-search-bar{z-index:10; background-color: #fff;}
-    .weui-search-bar__cancel-btn{color:#85D5BC;}
+        .weui-icon-search{color:#68BFA6;}
 
-    .weui-search-bar.w-search:after{content:none;}
+        .weui-search-bar__form{border-radius:5px; overflow:hidden;}
+        .weui-search-bar__cancel-btn{color:#85D5BC;}
+    }
 </style>

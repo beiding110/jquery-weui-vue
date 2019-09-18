@@ -1,5 +1,5 @@
 <template>
-    <form class="weui-cells_form">
+    <form class="wv-form weui-cells_form">
         <slot></slot>
 
         <slot name="btn" :submit="submit"></slot>
@@ -94,7 +94,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-    .weui-cells{margin-top:0; padding:1em 0;}
-    .weui-cells+.weui-cells{margin-top:1.17647059em;}
+<style lang="scss">
+    .wv-form{
+        .weui-cells{margin-top:0; padding:1em 0;}
+        .weui-cells+.weui-cells{margin-top:1.17647059em;}
+    }
 </style>

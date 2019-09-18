@@ -1,5 +1,5 @@
 <template>
-    <div ref="popup" class="weui-popup__container w-pupup">
+    <div ref="popup" class="weui-popup__container wv-pupup">
         <div class="weui-popup__overlay"></div>
         <div class="weui-popup__modal" :style="{top: top}">
             你的内容放在这里...
@@ -58,7 +58,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-    .w-pupup .weui-popup__overlay{background-color:rgba(0,0,0,0);}
-    .w-pupup .weui-popup__modal{background:white;}
+<style lang="scss">
+.wv-pupup{
+    .weui-popup__overlay{background-color:rgba(0,0,0,0);}
+    .weui-popup__modal{background:white;}
+}
 </style>

@@ -93,16 +93,17 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.wv-switch-con{}
-.wv-switch{display:inline-block; line-height:100%; vertical-align:middle;}
+<style lang="scss">
+.wv-switch-con{
+    .wv-switch{display:inline-block; line-height:100%; vertical-align:middle;}
 
-.wv-switch_small{height:14px; line-height:14px;}
-.wv-switch_small::before, .wv-switch_small::after{height:12px;}
+    .wv-switch_small{height:14px; line-height:14px;}
+    .wv-switch_small::before, .wv-switch_small::after{height:12px;}
 
-.wv-switch_small{width:34px;}
-.wv-switch_small::before{width:32px;}
-.wv-switch_small::after{width:12px;}
+    .wv-switch_small{width:34px;}
+    .wv-switch_small::before{width:32px;}
+    .wv-switch_small::after{width:12px;}
 
-.wv-switch_large{}
+    .wv-switch_large{}
+}
 </style>

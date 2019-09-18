@@ -29,10 +29,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-.wv-card{background:rgba(255,255,255,1); border-radius:3px; padding:1em;}
-
-.wv-card__header{color:#353535; font-size:1.14em; font-weight:bold; display:block; }
+<style lang="scss">
+.wv-card{background:rgba(255,255,255,1); border-radius:3px; padding:1em;
+    .wv-card__header{color:#353535; font-size:1.14em; font-weight:bold; display:block; }
+}
 .wv-card__header, .wv-card__body, .wv-card__footer{line-height:1.8em;}
-
 </style>

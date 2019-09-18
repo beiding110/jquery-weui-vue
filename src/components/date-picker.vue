@@ -1,5 +1,5 @@
 <template>
-    <input class="weui-input" ref="datePicker" type="text" v-model="model">
+    <input class="wv-date-picker weui-input" ref="datePicker" type="text" v-model="model">
 </template>
 
 <script>

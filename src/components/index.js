@@ -2,28 +2,31 @@ import btnPicker from './btn-picker'
 import btnPopPicker from './btn-pop-picker'
 import btn from './btn'
 import btnFixed from './btn-fixed'
+import fixedBtn from './fixed-btn'
+
+import form from './form'
 import formItem from './form-item'
+
 import inputPicker from './input-picker'
+import radio from './radio'
+import wSwitch from './switch'
+import select from './select'
+import datePicker from './date-picker'
+
 import scrollLoader from './scroll-loader'
 import searchBar from './search-bar'
 import searchTop from './search-top'
+
+import topBar from './top-bar'
+import tab from './tab'
+import tabItem from './tab-item'
+
 import table from './table'
 import tableRow from './table-row'
-import topBar from './top-bar'
-
-import wForm from './w-form'
-import wRadio from './w-radio'
-import wSwitch from './w-switch'
-import wSelect from './w-select'
-import wDatePicker from './w-date-picker'
-
-import wTab from './w-tab'
-import wTabItem from './w-tab-item'
 import card from './card'
 import badge from './badge'
 import tag from './tag'
-import fixedBtn from './fixed-btn'
-import wPopup from './popup'
+import popup from './popup'
 
 function install(Vue) {
     Vue.component('wv-btn-picker', btnPicker);
@@ -40,20 +43,20 @@ function install(Vue) {
     Vue.component('wv-top-bar', topBar);
     Vue.component('wv-fixed-btn', fixedBtn);
 
-    Vue.component('wv-form', wForm);
+    Vue.component('wv-form', form);
     Vue.component('wv-form-item', formItem);
 
-    Vue.component('wv-radio', wRadio);
+    Vue.component('wv-radio', radio);
     Vue.component('wv-switch', wSwitch);
-    Vue.component('wv-select', wSelect);
-    Vue.component('wv-date-picker', wDatePicker);
+    Vue.component('wv-select', select);
+    Vue.component('wv-date-picker', datePicker);
 
-    Vue.component('wv-tab', wTab);
-    Vue.component('wv-tab-item', wTabItem);
+    Vue.component('wv-tab', tab);
+    Vue.component('wv-tab-item', tabItem);
     Vue.component('wv-card', card);
     Vue.component('wv-badge', badge);
     Vue.component('wv-tag', tag);
-    Vue.component('wv-popup', wPopup);
+    Vue.component('wv-popup', popup);
 
     Vue.component('wv-table-con', table);
     Vue.component('wv-table-row', tableRow);

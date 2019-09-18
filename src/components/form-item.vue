@@ -1,5 +1,5 @@
 <template>
-    <div :class="itemClass">
+    <div :class="itemClass" class="wv-form-item">
         <div class="weui-cell__hd">
             <label class="weui-label">
                 <font v-if="$attrs.required || $attrs.required===''" class="required__star">*</font>
@@ -52,9 +52,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-    .required__star{color:red; position:absolute; left:5px; top:52%; transform:translate(0,-50%);}
-    .weui-cell_select{padding:10px 15px;}
+<style lang="scss">
+    .wv-form-item{
+        .required__star{color:red; position:absolute; left:5px; top:52%; transform:translate(0,-50%);}
+        .weui-cell_select{padding:10px 15px;}
 
-    .error__noti{position:absolute; bottom:-0.5em; font-size:10px; color:red;}
+        .error__noti{position:absolute; bottom:-0.5em; font-size:10px; color:red;}
+    }
 </style>

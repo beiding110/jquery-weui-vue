@@ -1,5 +1,5 @@
 <template>
-    <input class="weui-input" ref="picker" v-model="label" type="text" :placeholder="placeholder">
+    <input class="wv-input-picker weui-input" ref="picker" v-model="label" type="text" :placeholder="placeholder">
 </template>
 
 <script>

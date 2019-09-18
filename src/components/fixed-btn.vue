@@ -37,7 +37,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-.wv-fixed-btn{position:fixed; right:20px; bottom:40px; background:red; border-radius:1em; line-height:2em; padding:0 .5em; text-align:center;}
-.wv-fixed-btn .iconfont{font-size:2em;}
+<style lang="scss">
+.wv-fixed-btn{position:fixed; right:20px; bottom:40px; background:red; border-radius:1em; line-height:2em; padding:0 .5em; text-align:center;
+    & .iconfont{font-size:2em;}
+}
 </style>
