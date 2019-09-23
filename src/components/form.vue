@@ -8,7 +8,16 @@
 
 <script>
 export default {
-    props: ['model'],
+    props: {
+        model: {
+            type: Object,
+            default: () => ({})
+        },
+        labelWidth: {
+            type: String,
+            default: ''
+        }
+    },
     data () {
         return {
 
@@ -85,10 +94,20 @@ export default {
                     this.$emit('submit')
                 }
             })
+        },
+        setChildrenLabelWidth() {
+            if(!!this.labelWidth) {
+                this.$children.forEach(item => {
+                    item.labelWidth = this.labelWidth;
+                });
+            }
         }
     },
-    mounted:function(){
+    created() {
 
+    },
+    mounted:function(){
+        this.setChildrenLabelWidth();
     }
 }
 </script>

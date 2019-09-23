@@ -12,6 +12,7 @@ import radio from './radio'
 import wSwitch from './switch'
 import select from './select'
 import datePicker from './date-picker'
+import upload from './upload'
 
 import scrollLoader from './scroll-loader'
 import searchBar from './search-bar'
@@ -33,33 +34,32 @@ function install(Vue) {
     Vue.component('wv-btn-pop-picker', btnPopPicker);
     Vue.component('wv-btn', btn);
     Vue.component('wv-btn-fixed', btnFixed);
-
-    Vue.component('wv-input-picker', inputPicker);
-    Vue.component('wv-scroll-loader', scrollLoader);
-
-    Vue.component('wv-search-bar', searchBar);
-    Vue.component('wv-search-top', searchTop);
-
-    Vue.component('wv-top-bar', topBar);
     Vue.component('wv-fixed-btn', fixedBtn);
 
     Vue.component('wv-form', form);
     Vue.component('wv-form-item', formItem);
 
+    Vue.component('wv-input-picker', inputPicker);
     Vue.component('wv-radio', radio);
     Vue.component('wv-switch', wSwitch);
     Vue.component('wv-select', select);
     Vue.component('wv-date-picker', datePicker);
+    Vue.component('wv-upload', upload);
 
+    Vue.component('wv-scroll-loader', scrollLoader);
+    Vue.component('wv-search-bar', searchBar);
+    Vue.component('wv-search-top', searchTop);
+
+    Vue.component('wv-top-bar', topBar);
     Vue.component('wv-tab', tab);
     Vue.component('wv-tab-item', tabItem);
+
+    Vue.component('wv-table-con', table);
+    Vue.component('wv-table-row', tableRow);
     Vue.component('wv-card', card);
     Vue.component('wv-badge', badge);
     Vue.component('wv-tag', tag);
     Vue.component('wv-popup', popup);
-
-    Vue.component('wv-table-con', table);
-    Vue.component('wv-table-row', tableRow);
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

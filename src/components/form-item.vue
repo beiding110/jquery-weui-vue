@@ -1,7 +1,7 @@
 <template>
     <div :class="itemClass" class="wv-form-item">
         <div class="weui-cell__hd">
-            <label class="weui-label">
+            <label class="weui-label" :style="{width: labelWidth}">
                 <font v-if="$attrs.required || $attrs.required===''" class="required__star">*</font>
                 <slot name="label">
                     {{label}}
@@ -10,7 +10,7 @@
         </div>
         <div class="weui-cell__bd">
             <slot>
-                <input class="weui-input" :type="type || 'text'" :placeholder="placeholder || ''" v-model="model">
+                <input class="weui-input" :type="type" :placeholder="placeholder" v-model="model">
             </slot>
         </div>
         <div class="weui-cell__ft" v-if="$slots.footer">
@@ -23,7 +23,36 @@
 
 <script>
 export default {
-    props: ['label', 'value', 'placeholder', 'type', 'arrow', 'prop'],
+    props: {
+        label: {
+            type: String,
+            default: ''
+        },
+        value: {
+            type: String,
+            default: ''
+        },
+        placeholder: {
+            type: String,
+            default: ''
+        },
+        type: {
+            type: String,
+            default: 'text'
+        },
+        arrow: {
+            type: Boolean,
+            default: false
+        },
+        labelWidth: {
+            type: String,
+            default: '105px'
+        },
+        prop: {
+            type: String,
+            default: ''
+        }
+    },
     data () {
         return {
             error: null
@@ -39,7 +68,7 @@ export default {
             }
         },
         itemClass: function(){
-            return this.arrow != undefined ? 'weui-cell weui-cell_select weui-cell_select-after' : 'weui-cell'
+            return this.arrow ? 'weui-cell weui-cell_select weui-cell_select-after' : 'weui-cell'
         }
     },
     methods:{
