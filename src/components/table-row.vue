@@ -5,7 +5,7 @@
         </td>
         <td class="table-data">
             <slot :row="$parent.data[prop]">
-                <div v-html="$parent.data[prop] || '-'"></div>
+                <div v-html="contentComput($parent.data[prop])"></div>
             </slot>
         </td>
     </tr>
@@ -27,7 +27,13 @@ export default {
         }
     },
     methods:{
-
+        contentComput(data) {
+            if(data === undefined || data === null || data === '') {
+                return '-'
+            } else {
+                return data;
+            };
+        }
     },
     mounted:function(){
     }
